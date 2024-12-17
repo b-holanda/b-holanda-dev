@@ -37,7 +37,7 @@ export async function createServer(
     vite = await (
       await import('vite')
     ).createServer({
-      base: '/test/',
+      base: '/',
       root,
       logLevel: isTest ? 'error' : 'info',
       server: {
@@ -68,13 +68,12 @@ export async function createServer(
 
   app.use('*', async (req, res) => {
     try {
-      const url = req.originalUrl.replace('/test/', '/')
 
       let template, render
       if (!isProd) {
         // always read fresh template in dev
         template = fs.readFileSync(resolve('index.html'), 'utf-8')
-        template = await vite.transformIndexHtml(url, template)
+        template = await vite.transformIndexHtml('/', template)
         render = (await vite.ssrLoadModule('/src/entry-server.js')).render
       } else {
         template = indexProd
@@ -82,7 +81,7 @@ export async function createServer(
         render = (await import('./dist/server/entry-server.js')).render
       }
 
-      const [appHtml, preloadLinks] = await render(url, manifest)
+      const [appHtml, preloadLinks] = await render('/', manifest)
 
       const html = template
         .replace(`<!--preload-links-->`, preloadLinks)
