@@ -2,7 +2,7 @@ import path from 'node:path'
 import { defineConfig } from 'vite'
 import vuePlugin from '@vitejs/plugin-vue'
 
-const base = '/test/'
+const base = '/'
 
 // preserve this to test loading __filename & __dirname in ESM as Vite polyfills them.
 // if Vite incorrectly load this file, node.js would error out.
