@@ -10,27 +10,27 @@ const items = ref([
     },
     {
         link: '#about',
-        title: 'Sobre',
+        title: 'About',
         icon: UserRoundCheck,
     },
     {
         link: '#experience',
-        title: 'Experiência',
+        title: 'Experience',
         icon: GraduationCap,
     },
     {
         link: '#projects',
-        title: 'Projetos',
+        title: 'Projects',
         icon: Layers,
     },
     {
         link: '#pappers',
-        title: 'Artigos',
+        title: 'Pappers',
         icon: Newspaper,
     },
     {
         link: '#contact',
-        title: 'Contato',
+        title: 'Contact',
         icon: MessageSquare,
     },
 ])
