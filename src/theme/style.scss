@@ -1,0 +1,6 @@
+@forward 'reset.scss';
+@forward 'tokens.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

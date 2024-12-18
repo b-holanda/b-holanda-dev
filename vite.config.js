@@ -1,6 +1,6 @@
-import path from 'node:path'
 import { defineConfig } from 'vite'
 import vuePlugin from '@vitejs/plugin-vue'
+import tailwindcss from "tailwindcss";
 
 const base = '/'
 
