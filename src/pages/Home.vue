@@ -6,11 +6,14 @@ import Sidebar from '../components/Sidebar.vue';
 </script>
 
 <template>
-  <Appbar />
-  <Sidebar />
-  <main>
-    <h2>here</h2>
-  </main>
+  <div class="relative">
+    <input id="toggler" type="checkbox" class="peer/toggler hidden">
+    <Appbar />
+    <Sidebar />
+    <main>
+      <h2>here</h2>
+    </main>
+  </div>
 </template>
 
 <style scoped>

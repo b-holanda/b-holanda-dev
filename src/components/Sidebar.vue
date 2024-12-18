@@ -36,7 +36,7 @@ const items = ref([
 ])
 </script>
 <template>
-    <nav class="flex w-full">
+    <nav class="mt-[-475px] w-full peer-checked/toggler:mt-0 transition-all duration-300 ease-linear">
         <ul class="flex flex-col w-full mt-36 mb-12 pb-4 border-b-4 border-solid border-text-secondary">
             <li v-for="(item, index) in items" :key="index" class="mt-4 flex items-center">
                 <a :href="item.link" class="flex items-center">
