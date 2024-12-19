@@ -2,6 +2,7 @@
 import Appbar from '../components/Appbar.vue';
 import Avatar from '../components/Avatar.vue';
 import Sidebar from '../components/Sidebar.vue';
+import Button from '../components/Button.vue';
 import avatarImage from '../assets/avatar.png';
 import { ref } from 'vue';
 import { Facebook, Github, Instagram, Linkedin, Mail } from 'lucide-vue-next';
@@ -51,10 +52,15 @@ const social = ref([
               </a>
             </li>
           </ul>
+        <div class="mt-8 flex w-full justify-center">
+          <div class="flex w-36">
+            <Button>Hire me</Button>
+          </div>
+        </div>
       </section>
       <section id="about">
         <article>
-          <h2>About Me</h2>
+          <h2 class="text-3xl font-bold">About Me</h2>
         </article>
       </section>
     </main>
