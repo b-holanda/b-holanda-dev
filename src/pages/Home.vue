@@ -35,7 +35,7 @@ const social = ref([
     <input id="toggler" type="checkbox" class="peer/toggler hidden">
     <Appbar />
     <Sidebar />
-    <main>
+    <main class="relative md:ml-64">
       <section id="home" class="flex h-screen justify-center items-center flex-col">
         <div class="w-full flex justify-center">
           <Avatar :url="avatarImage" />
