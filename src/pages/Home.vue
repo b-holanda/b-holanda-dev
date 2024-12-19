@@ -47,7 +47,7 @@ const social = ref([
         <ul class="flex w-full justify-center mt-8">
             <li v-for="(item, index) in social" :key="index" :class="index !== 0 ? 'ml-8' : ''">
               <a :href="item.url" target="_blank">
-                <component :is="item.icon" />
+                <component :is="item.icon" class="hover:text-secondary transition-all duration-300 ease-linear"/>
               </a>
             </li>
           </ul>

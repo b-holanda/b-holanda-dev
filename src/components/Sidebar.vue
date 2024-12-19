@@ -40,7 +40,7 @@ const items = ref([
         <h1 class=" hidden text-4xl font-bold md:block mt-10">Bruno</h1>
         <ul class="flex flex-col w-full mt-36 mb-12 pb-4 border-b-4 border-solid border-text-secondary md:border-b-0">
             <li v-for="(item, index) in items" :key="index" class="mt-8 flex items-center">
-                <a :href="item.link" class="flex items-center">
+                <a :href="item.link" class="flex items-center hover:text-secondary transition-all duration-300 ease-linear">
                     <component :is="item.icon" class="mr-4 text-secondary" size="20" />
                     <span class="font-bold text-md">{{ item.title }}</span>
                 </a>
