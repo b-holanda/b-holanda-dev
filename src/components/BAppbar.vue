@@ -2,7 +2,7 @@
 import { Menu } from 'lucide-vue-next'
 </script>
 <template>
-  <nav class="relative flex w-full items-center bg-ternary z-50 pt-4 md:hidden">
+  <nav class="relative flex w-full items-center bg-ternary z-50 pt-4 lg:hidden">
     <label for="toggler" class="mr-4">
       <Menu size="35" />
     </label>

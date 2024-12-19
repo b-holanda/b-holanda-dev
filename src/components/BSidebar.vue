@@ -44,11 +44,11 @@ const items = ref([
 </script>
 <template>
   <nav
-    class="mt-[-500px] w-full peer-checked/toggler:mt-0 transition-all duration-300 ease-linear md:w-64 md:h-screen md:fixed md:mt-0 md:border-r-[.5px] border-solid border-[#6b6b6b]"
+    class="mt-[-500px] w-full peer-checked/toggler:mt-0 transition-all duration-300 ease-linear md:left-8 lg:w-64 lg:h-screen lg:fixed lg:mt-0 lg:border-r-[.5px] border-solid border-[#6b6b6b]"
   >
-    <h1 class="hidden text-4xl font-bold md:block mt-10">Bruno</h1>
+    <h1 class="hidden text-4xl font-bold lg:block mt-10">Bruno</h1>
     <ul
-      class="flex flex-col w-full mt-36 mb-12 pb-4 border-b-4 border-solid border-text-secondary md:border-b-0"
+      class="flex flex-col w-full mt-36 mb-12 pb-4 border-b-4 border-solid border-text-secondary lg:border-b-0"
     >
       <li
         v-for="(item, index) in items"

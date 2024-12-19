@@ -49,7 +49,7 @@ const trends = ref({
     <input id="toggler" type="checkbox" class="peer/toggler hidden" />
     <b-appbar />
     <b-sidebar />
-    <main class="relative md:ml-64">
+    <main class="relative lg:ml-64">
       <section
         id="home"
         class="flex h-screen justify-center items-center flex-col"
@@ -83,21 +83,30 @@ const trends = ref({
         </div>
       </section>
       <section id="about">
-        <article class="flex w-full flex-col justify-center items-center">
+        <article class="flex w-full flex-col justify-center items-center ml-4">
           <h2 class="text-4xl font-bold w-full">About Me</h2>
-          <b-avatar :url="profileImage" class="mt-20" />
-          <b-card bg="bg-[#302f4e]" class="mt-8">
-            <div class="w-full">
-              I am Bruno Holanda, a Software Engineer working as a Software
-              Architect at Gauge. I am 30 years old, married, and a father of an
-              angel and a pet owner. I have rich experience in software
-              modeling, development, and DevOps.
-            </div>
-            <div class="flex w-48 pt-8">
-              <b-button>Download CV</b-button>
-            </div>
-            <b-radar :trends="trends" class="mt-8"/>
-          </b-card>
+          <div
+            class="flex flex-col justify-center items-center lg:flex-row lg:justify-between lg:items-start"
+          >
+            <b-avatar :url="profileImage" class="mt-20" />
+            <b-card
+              bg="bg-[#302f4e]"
+              class="mt-8 lg:w-2/3 lg:h-96 lg:flex lg:items-center"
+            >
+              <div>
+                <div class="w-full">
+                  I am Bruno Holanda, a Software Engineer working as a Software
+                  Architect at Gauge. I am 30 years old, married, and a father
+                  of an angel and a pet owner. I have rich experience in
+                  software modeling, development, and DevOps.
+                </div>
+                <div class="flex w-48 pt-8">
+                  <b-button>Download CV</b-button>
+                </div>
+              </div>
+              <b-radar :trends="trends" class="mt-8" />
+            </b-card>
+          </div>
         </article>
       </section>
     </main>
