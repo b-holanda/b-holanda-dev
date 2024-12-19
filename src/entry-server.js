@@ -2,6 +2,11 @@ import { basename } from 'node:path'
 import { renderToString } from 'vue/server-renderer'
 import { createApp } from './main'
 
+global.__ssr_vue_processAssetPath = function (path) {
+  // Ajuste o caminho conforme necessário
+  return path;
+};
+
 export async function render(url, manifest) {
   const { app, router } = createApp()
 
