@@ -18,8 +18,13 @@ import avatarImage from '../assets/avatar.png';
         </div>
         <h2 class="text-4xl font-bold mt-4">Bruno Holanda</h2>
         <div class="flex">
-          <h3 class="mr-1">I'm a</h3><span>Software Engenner</span>
+          <h3 class="mr-1">I'm a</h3><span class="animate-pulse">Software Engenner</span>
         </div>
+      </section>
+      <section id="about">
+        <article>
+          <h2>About Me</h2>
+        </article>
       </section>
     </main>
   </div>
