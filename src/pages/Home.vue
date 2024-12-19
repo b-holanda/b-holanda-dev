@@ -4,7 +4,7 @@ import Avatar from '../components/Avatar.vue';
 import Sidebar from '../components/Sidebar.vue';
 import avatarImage from '../assets/avatar.png';
 import { ref } from 'vue';
-import { Facebook, Github, Instagram, Linkedin } from 'lucide-vue-next';
+import { Facebook, Github, Instagram, Linkedin, Mail } from 'lucide-vue-next';
 
 const social = ref([
   {
@@ -23,6 +23,10 @@ const social = ref([
     icon: Github,
     url: 'https://github.com/b-holanda/',
   },
+  {
+    icon: Mail,
+    url: 'mailto:brunorodriguesholanda@gmail.com?subject=Contato via Portifolio&body=Olá gostaria de entrar em contato',
+  }
 ])
 </script>
 
