@@ -8,6 +8,7 @@ const props = defineProps({
     required: true,
   },
 })
+
 onMounted(() => {
   const ctx = document.getElementById('radar').getContext('2d')
   const labels = Object.keys(props.trends)
@@ -24,7 +25,6 @@ onMounted(() => {
           backgroundColor: 'rgba(252, 79, 97, 0.7)',
           borderColor: '#fc4f61',
           pointBackgroundColor: '#fc4f61',
-          fill: true,
           color: 'white',
         },
       ],

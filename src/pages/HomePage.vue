@@ -34,11 +34,13 @@ const social = ref([
 ])
 
 const trends = ref({
-  frontend: 8,
-  backend: 10,
-  architecture: 9,
-  devops: 7,
-  data: 6
+  backend: 95,
+  architecture: 80,
+  devops: 60,
+  ai: 30,
+  data: 25,
+  design: 18,
+  frontend: 70,
 })
 </script>
 
