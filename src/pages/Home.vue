@@ -4,6 +4,7 @@ import Avatar from '../components/Avatar.vue';
 import Sidebar from '../components/Sidebar.vue';
 import Button from '../components/Button.vue';
 import avatarImage from '../assets/avatar.png';
+import profileImage from '../assets/profile.png';
 import { ref } from 'vue';
 import { Facebook, Github, Instagram, Linkedin, Mail } from 'lucide-vue-next';
 
@@ -59,8 +60,9 @@ const social = ref([
         </div>
       </section>
       <section id="about">
-        <article>
-          <h2 class="text-3xl font-bold">About Me</h2>
+        <article class="flex w-full flex-col justify-center items-center">
+          <h2 class="text-4xl font-bold w-full">About Me</h2>
+          <Avatar :url="profileImage" class="mt-20"/>
         </article>
       </section>
     </main>
