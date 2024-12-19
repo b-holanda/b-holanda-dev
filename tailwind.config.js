@@ -1,13 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js}",
-  ],
+  content: ['./index.html', './src/**/*.{vue,js}'],
   theme: {
     extend: {
       fontFamily: {
-        rubik: ["Rubik", "sans-serif"],
+        rubik: ['Rubik', 'sans-serif'],
       },
     },
     colors: {
@@ -20,7 +17,7 @@ export default {
       card: 'var(--color-card-bg)',
       'text-primary': 'var(--color-text-primary)',
       'text-secondary': 'var(--color-text-secondary)',
-    }
+    },
   },
-  plugins: []
+  plugins: [],
 }

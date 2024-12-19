@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import vuePlugin from '@vitejs/plugin-vue'
-import tailwindcss from "tailwindcss";
+import tailwindcss from 'tailwindcss'
 
 const base = '/'
 
@@ -11,9 +11,7 @@ globalThis.__vite_test_dirname = __dirname
 
 export default defineConfig(({ command, ssrBuild, isSsrBuild }) => ({
   base,
-  plugins: [
-    vuePlugin(),
-  ],
+  plugins: [vuePlugin()],
   experimental: {
     renderBuiltUrl(filename, { hostType, type, ssr }) {
       if (ssr && type === 'asset' && hostType === 'js') {

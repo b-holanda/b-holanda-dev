@@ -9,7 +9,7 @@ const isTest = process.env.VITEST
 export async function createServer(
   root = process.cwd(),
   isProd = process.env.NODE_ENV === 'production',
-  hmrPort,
+  hmrPort
 ) {
   const __dirname = path.dirname(fileURLToPath(import.meta.url))
   const resolve = (p) => path.resolve(__dirname, p)
@@ -20,10 +20,7 @@ export async function createServer(
 
   const manifest = isProd
     ? JSON.parse(
-        fs.readFileSync(
-          resolve('dist/client/.vite/ssr-manifest.json'),
-          'utf-8',
-        ),
+        fs.readFileSync(resolve('dist/client/.vite/ssr-manifest.json'), 'utf-8')
       )
     : {}
 
@@ -62,13 +59,12 @@ export async function createServer(
       '/',
       (await import('serve-static')).default(resolve('dist/client'), {
         index: false,
-      }),
+      })
     )
   }
 
   app.use('*', async (req, res) => {
     try {
-
       let template, render
       if (!isProd) {
         // always read fresh template in dev
@@ -103,6 +99,6 @@ if (!isTest) {
   createServer().then(({ app }) =>
     app.listen(6173, () => {
       console.log('http://localhost:6173')
-    }),
+    })
   )
 }

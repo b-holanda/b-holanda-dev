@@ -4,8 +4,8 @@ import { createApp } from './main'
 
 global.__ssr_vue_processAssetPath = function (path) {
   // Ajuste o caminho conforme necessário
-  return path;
-};
+  return path
+}
 
 export async function render(url, manifest) {
   const { app, router } = createApp()
