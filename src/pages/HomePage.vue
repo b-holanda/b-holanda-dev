@@ -49,7 +49,7 @@ const trends = ref({
     <input id="toggler" type="checkbox" class="peer/toggler hidden" />
     <b-appbar />
     <b-sidebar />
-    <main class="relative lg:ml-64">
+    <main class="relative lg:ml-60 max-w-[1137px]">
       <section
         id="home"
         class="flex h-screen justify-center items-center flex-col"
@@ -83,15 +83,15 @@ const trends = ref({
         </div>
       </section>
       <section id="about">
-        <article class="flex w-full flex-col justify-center items-center ml-4">
+        <article class="flex w-full flex-col justify-center items-center">
           <h2 class="text-4xl font-bold w-full">About Me</h2>
           <div
             class="flex flex-col justify-center items-center lg:flex-row lg:justify-between lg:items-start"
           >
-            <b-avatar :url="profileImage" class="mt-20" />
+            <b-avatar :url="profileImage" class="mt-20 md:mt-8" />
             <b-card
               bg="bg-[#302f4e]"
-              class="mt-8 lg:w-2/3 lg:h-96 lg:flex lg:items-center"
+              class="mt-8 lg:w-2/3 lg:h-96 lg:flex lg:items-start"
             >
               <div>
                 <div class="w-full">
